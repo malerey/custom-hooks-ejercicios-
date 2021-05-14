@@ -80,7 +80,7 @@ export default App;
 - Sin pensar en hooks todavía, modificar el código para que tanto la suma como la resta se hagan correctamente desde una sola función llamada handleClick 
 - (pista: va a ser necesario identificar a los botones, por ejemplo con un id o con un name)
 - Una vez que eso funcione, extraer toda la lógica del conteo al hook useCount
-- App debería quedar así:
+- App debería quedar aproximadamente así:
 
 ```js
 import React from 'react';
@@ -92,8 +92,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <button onClick={setCount} id="suma">Sumar</button>
-      <button onClick={setCount} id="resta">Restar</button>
+      <button onClick={setCount} id="suma">Sumar</button> // aca faltan cosas, es solo una guia
+      <button onClick={setCount} id="resta">Restar</button> // aca faltan cosas, es solo una guia
       <p>{count}</p>
     </div>
   );
