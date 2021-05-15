@@ -26,7 +26,7 @@ export default App;
 
 - Queremos extraer toda la lógica del estado en App y llevarla a un custom hook. 
 - Hacer un custom hook que se llame desde App y que se encargue de actualizar la variable count cada vez que se aprieta el botón. 
-- App debería quedar así:
+- App debería quedar aproximadamente así:
 
 ```js
 import React from 'react';
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <button onClick={setCount}>Contar</button>
+      <button onClick={setCount}>Contar</button> // esto es una guia, no debe quedar exactamente asi
       <p>{count}</p>
     </div>
   );
